@@ -1,0 +1,124 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: -webkit-linear-gradient(blue,white,blue);
+    margin: 0 100px;
+}
+.nav{
+    width: 100%;
+    padding: 30px 0;
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+}
+.nav .log ,h1{
+    color: rgba(0, 0, 0, 0.877);
+}
+ ul{
+    display: flex;
+    list-style: none;
+}
+ li{
+    margin: 30px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 17px;
+}
+ul.active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: orangered;
+    display: flex;
+    position: fixed;
+    margin-left: 10px;
+}
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+#i{
+    background: transparent;
+    border: none;
+}
+#u{
+    background: rgb(226, 68, 10);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;    
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#left{
+    display: block;
+    width: 100%;
+}
+.info{
+    max-width: 100%;
+    display: flex;
+    flex-direction:column ;
+}
+h2{
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+
+}
+
+#f{
+    font-size:20px ;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+button{
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+img{
+    width:500px;
+    height: 400px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    /* animation: rotate 10s linear infinite; */
+    
+}
+/* @keyframes rotate {
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    } */
+    
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 17px;
+}
+
+
